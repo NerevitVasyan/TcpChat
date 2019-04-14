@@ -1,0 +1,27 @@
+﻿<Window x:Class="Client.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="300
+        ">
+    <Grid>
+        <StackPanel>
+            <TextBlock>Email: </TextBlock>
+            <TextBox Name="emailTextBox"></TextBox>
+            <TextBlock>Password:</TextBlock>
+            <TextBox Name="passwordTextBox"></TextBox>
+            <Button Click="Button_Click">Register</Button>
+            <Expander Name="exp">
+                <StackPanel>
+                    <TextBlock>Code:</TextBlock>
+                    <TextBox Name="code"></TextBox>
+                    <Button Click="Button_Click_1">Confirm</Button>
+                </StackPanel>
+            </Expander>
+           
+        </StackPanel>
+    </Grid>
+</Window>
